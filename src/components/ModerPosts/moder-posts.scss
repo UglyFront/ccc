@@ -1,0 +1,33 @@
+.moderPosts {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.creactePost {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto; 
+}
+
+.moderPosts input {
+    margin: 10px 5px;
+}
+.creactePost__text-post {
+    transition: none;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 250px;
+    min-height: 150px;
+    
+}
+
+.deletePost {
+    margin: 0 auto; 
+    max-width: 700px;
+    input {
+        width: 100%;
+    }
+}

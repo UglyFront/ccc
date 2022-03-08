@@ -1,0 +1,197 @@
+.course__section {
+    margin-top: 40px;
+}
+
+@font-face {
+    font-family: "roadRadio";
+    src: url("../../utils/fonts/RoadRadio.ttf");
+}
+
+.course {
+    position: relative;
+    text-align: center;
+}
+
+.courses {
+    margin-top: 50px;
+    padding: 0 20px;
+    text-align: center;
+
+    img {
+        border-radius: 20px;
+        height: 150px;
+        width: 220px;
+    }
+
+    h2 {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+.courses__carousel {
+    display: flex;
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.courses__btn {
+    position: absolute;
+    z-index: 5;
+    height: 30px;
+    width: 30px;
+    top: 50%;
+}
+
+.courses__prev {
+    left: 0;
+    z-index: 6;
+}
+
+.courses__next {
+    right: 0;
+    z-index: 6;
+}
+
+.courses__item {
+
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+
+.coursePage {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.course__signUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course__header {
+    font-size: 35px;
+}
+
+.course__description {
+    text-align: justify;
+    word-break: break-all;
+    max-width: 770px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.course__input {
+    border: none;
+    border: 1px solid #242424;
+    border-radius: 10px;
+    position: relative;
+    outline: none;
+    padding: 15px 15px;
+    font-size: 18px;
+    margin: 10px 0;
+    width: 600px;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+.course__signUp__btn {
+    display: block;
+    font-size: 16px;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    transition: .3s;
+    font-family: roadRadio;
+
+    &:hover {
+        transform: scale(0.9)
+    }
+
+    span {
+        margin-top: 10px;
+        font-size: 15px;
+        display: block;
+    }
+}
+
+.course__img {
+    width: 300px;
+    height: 200px;
+    margin: 10px 0;
+    position: absolute;
+    right: -2%;
+    bottom: 90px;
+    transform: rotate(20deg);
+}
+
+.course__book {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: 0%;
+    left: -5%;
+}
+
+.slick-slide {
+    padding: 10px;
+}
+
+.slick-slide img {
+    display: inline-block;
+}
+
+@media screen and (max-width: 550px) {
+    .course__img {
+        width: 220px;
+        height: 150px;
+    }
+
+    .course__signUp__btn {
+        font-size: 18px;
+    }
+
+    .courses__item img {
+        width: 220px;
+        height: 150px;
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
+    
+    .courses__item img {
+        width: 220px;
+        height: 150px;
+    }
+
+    .course__book {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+   
+    .course__img {
+        margin-top: 100px;
+        position: relative;
+        transform: none;
+        min-width: 250px;
+        max-width: 350px;
+        text-align: center;
+    }
+}

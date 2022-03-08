@@ -1,0 +1,174 @@
+.admin-block {
+    border-radius: 26px;
+    padding: 15px;
+    text-align: center;
+}
+
+.orders-title {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 50%;
+    border-radius: 5px;
+}
+
+.orders-header {
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    transition: 0.2s;
+}
+
+.orders-header::before {
+    position: absolute;
+    content: "";
+    border: 1px solid #000;
+    transition: 0.1s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.orders-header:hover:before {
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.orders-header:hover {
+    transition: 0.2s;
+    background-color: #e4daff;
+    color: #2a00a2;
+    border: none;
+}
+
+.orders {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.order {
+    border: 1px solid #000;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.applications-block {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.admin__button {
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    transition: .3s;
+}
+
+.admin__input {
+    border: none;
+    border: 2px solid #bfbfbf;
+    border-radius: 26px;
+    position: relative;
+    outline: none;
+    padding: 8px 15px;
+    margin: 10px 0;
+}
+
+.add-category__inputs-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.add-product {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.increase-coin__button {
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+.increase-coin__inputs-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto; 
+}
+
+.registration { 
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+}
+
+.creactePost {
+    textarea {
+        max-width: 100%;
+        min-width: 300px;
+        max-height: 800px;
+    }
+}
+
+.orders-header {
+    margin-bottom: 20px;
+}
+
+
+.login__window {
+    background: #fff;
+    height: 500px;
+    border-radius: 26px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.login__password {
+    border: 1px solid #000;
+    padding: 10px 25px;
+    margin-bottom: 40px;
+}
+
+.login__btn {
+    display: block;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 20px; 
+    border-radius: 5px;   
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 1024px) {
+    .orders-title, 
+    .applications-block{
+        max-width: 95%;
+    }
+}
+@media (max-width: 500px) {
+    h1 {
+        font-size: 22px;
+    }
+}
+

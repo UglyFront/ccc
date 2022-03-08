@@ -1,0 +1,17 @@
+.table {
+    width: 1366px;
+    height: 100%;
+    background: #fff;
+    padding: 10px;
+}
+
+td {
+    width: 400px;
+    height: 20px;
+    border: 1px solid #000;
+}
+
+svg:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+}

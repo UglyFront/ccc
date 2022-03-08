@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "roadRadio";
+    src: url("../../utils/fonts/RoadRadio.ttf");
+}
+
+
+.logo {
+    max-width: 95%;
+}
+
+.city {
+    color: #fff;
+}
+.header {
+    padding-top: 55px;
+    margin-bottom: 50px;
+    font-family: roadRadio;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    border-radius: 200px;
+    padding: 5px;
+    color: #fff;
+}
+
+a.header__menu__link {
+    margin: 0 22px;
+    transition: .3s;
+}
+
+li {
+    margin-top: 10px;
+}
+
+
+.header__menu__link:hover {
+    color: silver;
+}
+
+.burger {
+    display: none;
+    margin-right: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+.login-box {
+    display: flex;
+    align-items: center;
+}
