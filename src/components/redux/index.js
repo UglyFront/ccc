@@ -7,7 +7,7 @@ import coursesReducer from "./coursesReducer";
 
 //export const ADRESS = "localhost";
 
-export const ADRESS = "89.108.71.167";
+export const ADRESS = "151.248.117.94";
 
 const rootReducer = combineReducers({
     reducer: reducer,
